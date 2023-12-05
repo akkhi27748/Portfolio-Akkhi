@@ -1,0 +1,45 @@
+
+@import url("index1.css");
+
+:root{
+    --primary-height:70%;
+    --inconsolata:'Inconsolata', monospace;
+    --mulish:'Mulish', sans-serif;
+    --nova-sqaure:'Nova Square', sans-serif;
+    --source-code:'Source Code Pro', monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 1vw;
+
+}
+body{
+    width: 100%;
+    /* height: auto; */
+    min-height: 100vh;
+    /* background-color: #00d4ff; */
+    /* background-image: linear-gradient(225deg, #00d4ff 18%, #00f0ff 38%, #464646 100%) ; */
+}
+
+*:focus{
+    outline: none;
+
+}
+
+a , a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.main-container{
+    height: 100%;
+    width: 100%;
+}
+
+
+

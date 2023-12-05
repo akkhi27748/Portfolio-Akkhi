@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Mulish&family=Nova+Square&family=Source+Code+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --inconsolata:'Inconsolata', monospace;
+    --mulish:'Mulish', sans-serif;
+    --nova-sqaure:'Nova Square', sans-serif;
+    --source-code:'Source Code Pro', monospace;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+
+}
+
+.header-cont{
+    background-color: #ecdff8;
+}
+
+.navbar-cont{
+    font-family: var(--source-code);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(180deg, #8EC5FC 30%, #E0C3FC 100%);
+
+}
+
+.logo-cont :hover{
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+
+.list-links{
+    font-size: 1.4vw;
+    display: flex;
+    gap: 5vw;
+}
+
+.links{
+    padding: 0.1rem 0.8rem;
+    border-radius: 10px;
+}
+
+.list-links a:hover{
+    transform: scale(1.15);
+    text-decoration: none;
+    background: #ecdff8;
+    color: black;
+}
+
+
+
+.intro-cont{
+    height: 70vh;
+    border: 1px solid black;
+    margin: 2rem 0;
+
+}
+
+.intro-section{
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+}
+
+.profile-img{
+    display: flex;
+    max-height: fit-content;
+    width: 30vw;
+    justify-content: center;
+    padding: 5vw;
+}
+
+.intro-about{
+    width: 50%;
+    font-family: var(--nova-sqaure);
+}
+
+.intro-about span{
+    color: white;
+    text-shadow: 1px 1px 2px rgb(250, 101, 101), 0 0 1em rgb(79, 79, 240), 0 0 0.2em blue;
+}
+
+.media-links{
+    height: 5vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.icon{
+    width:5%;
+
+}
+
+.about-cont{
+    padding: 2vw;
+    font-family: var(--source-code);
+    margin: auto;
+    /* text-align: center; */
+    justify-content: center;
+    /* background-color: #c0c0c1; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.project-cont{
+    height: 60vh;
+    justify-content: center;
+    padding: 2rem;
+    margin: 1rem 0;
+    font-family: var(--mulish);
+
+
+}
+
+.project-cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+

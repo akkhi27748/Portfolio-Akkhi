@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Mulish&family=Nova+Square&family=Source+Code+Pro&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --inconsolata:'Inconsolata', monospace;
-    --mulish:'Mulish', sans-serif;
-    --nova-sqaure:'Nova Square', sans-serif;
-    --source-code:'Source Code Pro', monospace;
+:root {
+    --inconsolata: 'Inconsolata', monospace;
+    --mulish: 'Mulish', sans-serif;
+    --nova-sqaure: 'Nova Square', sans-serif;
+    --source-code: 'Source Code Pro', monospace;
 }
 
-body{
+body {
     width: 100%;
     min-height: 100vh;
 }
 
-a{
+a {
     color: black;
     text-decoration: none;
 }
 
-.navbar-cont{
+.navbar-cont {
     font-family: var(--source-code);
     background-color: #8EC5FC;
     background-image: linear-gradient(180deg, #8EC5FC 30%, #E0C3FC 100%);
@@ -33,30 +33,30 @@ a{
 
 }
 
-.logo-cont{
+.logo-cont {
     padding: 0 2rem;
 }
 
-.logo-cont :hover{
+.logo-cont :hover {
     font-weight: 600;
     text-decoration: none;
     color: black;
 }
 
 
-.list-links{
+.list-links {
     padding: 0 2rem;
     font-size: 1.4vw;
     display: flex;
     gap: 5vw;
 }
 
-.links{
+.links {
     padding: 0.1rem 0.8rem;
     border-radius: 10px;
 }
 
-.list-links a:hover{
+.list-links a:hover {
     transform: scale(1.15);
     text-decoration: none;
     background: #ecdff8;
@@ -74,7 +74,7 @@ a{
     padding-right: 0;
 }
 
-.intro-cont{
+.intro-cont {
     /* position: absolute; */
     top: 1.2rem;
     background-image: url("../images/portfolio\ background.jpg");
@@ -84,17 +84,29 @@ a{
 
 }
 
-.intro-about > a{
-    
+.intro-about>a {
+
     text-decoration: none;
     color: white;
 }
 
-.intro-about > h1 , h3{
-    display: inline;
+.hover-change:hover {
+    transform: scale(1.2)
 }
 
-.intro-section{
+#change-skills {
+    width: 10.2rem;
+}
+
+#change-project {
+    width: 15.4rem;
+}
+
+#change-contact {
+    width: 19rem;
+}
+
+.intro-section {
     margin: auto;
     justify-content: space-between;
     align-items: center;
@@ -102,7 +114,7 @@ a{
     width: 90%;
 }
 
-.profile-img{
+.profile-img {
     display: flex;
     max-height: fit-content;
     width: 30vw;
@@ -110,68 +122,81 @@ a{
     padding: 5vw;
 }
 
-.intro-about{
+.intro-about {
     width: 50%;
     font-family: var(--nova-sqaure);
     color: white;
-    
+
 }
 
-.intro-about span{
+.intro-about span {
     color: rgb(95, 182, 236);
     /* text-shadow: 1px 1px 2px rgb(250, 101, 101), 0 0 1em rgb(79, 79, 240), 0 0 0.2em blue; */
 }
 
-.intro-about > p{
+.intro-about>p {
     padding: 2rem 0;
     font-size: larger;
 
 }
 
-.media-links{
+.media-links {
     height: 5vh;
     max-width: 100%;
     display: flex;
     align-items: center;
     gap: 1vw;
-    
-}
-
-.icon{
-    width:5%;
-    color: white!important;
-    fill:#fff;
-    
 
 }
 
-.about-me-btn{
+.icon {
+    width: 5%;
+    color: white !important;
+    fill: #fff;
+
+
+}
+
+.about-me-btn {
     border-radius: 2rem;
     color: white;
 }
 
-.main-cont{
-    padding-top: 8vh;
+.main-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #000;
+    height: 100vh;
 }
 
-.about-cont{
-    
+.about-cont {
+
     padding: 2vw;
     font-family: var(--source-code);
     margin: auto;
+    margin-top: 1rem;
     /* text-align: center; */
     justify-content: center;
     background-color: #c0c0c1;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(172, 171, 171, 0.25) 0px 54px 55px, rgba(167, 164, 164, 0.12) 0px -12px 30px, rgba(164, 157, 157, 0.12) 0px 4px 6px, rgba(180, 175, 175, 0.17) 0px 12px 13px, rgba(174, 169, 169, 0.09) 0px -3px 5px;
 
 }
 
-.about-img{
+.about-img {
     height: 70%;
-    width: 50%!important;
+    width: 50% !important;
 }
 
-.project-cont{
+.about-heading{
+    font-family: var(--source-code);
+    padding: 1rem;
+    font-size: 2.5vw;
+    color: #fc9003;
+}
+
+.project-cont {
     height: 60vh;
     justify-content: center;
     padding: 2rem;
@@ -181,15 +206,16 @@ a{
 
 }
 
-.project-cards{
+.project-cards {
     display: flex;
     justify-content: space-around;
 }
 
-.card{
+.card {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.footer-cont{
+.footer-cont {
+    font-size: larger;
+    color: #5FB6EC;
 }
-

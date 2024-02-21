@@ -157,6 +157,19 @@ a {
 
 }
 
+.home-icon{
+    position: absolute;
+    color: white;
+    font-size: 2.5rem;
+    top: 2rem;
+    right: 5rem;
+    text-decoration: none;
+}
+
+.home-icon:hover{
+    color: #5FB6EC;
+}
+
 .about-me-btn {
     border-radius: 2rem;
     color: white;
@@ -197,22 +210,125 @@ a {
 }
 
 .project-cont {
-    height: 60vh;
-    justify-content: center;
-    padding: 2rem;
-    margin: 1rem 0;
-    font-family: var(--mulish);
-
-
-}
-
-.project-cards {
+    height: 100vh;
+    width: 100vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--mulish);
+    background: #000000;
+    flex-direction: column;
+    
 }
+
+.project-heading{
+    color: #fc9003;
+}
+
+.project-section{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.project-cards{
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.inner-project-cards {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+    width: 150vw;
+    gap: 1.5vw;
+}
+
+/* .card {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+} */
+
 
 .card {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+    /* width: 48px; */
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+}
+
+.card:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+.card:hover svg {
+    scale: 0;
+}
+
+.card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #921ef0;
+    line-height: 1.4;
+    height: 20vh;
+}
+
+.project-btn{
+    margin: 1vw 0;
+    color: #000;
+    
+
 }
 
 .footer-cont {

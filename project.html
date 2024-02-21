@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -12,35 +13,78 @@
 
 </head>
 <body>
-    <section id="project" class="project-cont row">
-        <h2>Projects</h2>
-        <div class="container-fluid project-cards">
-            <div class="card" style="width: 18rem;">
-                <img src="./images/header-img_1_240x240.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
+    <main id="project" class="project-cont">
+        <a href="./index.html" class="home-icon"><i class='bx bx-home-alt'></i></a>
+        <section class="container-fluid project-section">
+            <h2 class="project-heading">My Works</h2>
+            <div class="container-fluid project-cards">
+                <div class="row inner-project-cards">
+                    <div class="card">
+                        <img src="./images/projects/tic-tac-toe.png" alt="tic-tac-toe" class="img-fluid">
+                        <div class="card__content">
+                            <p class="card__title">Tic-Tac-Toe</p>
+                            <p class="card__description">Tic-tac-toe, noughts and crosses, or Xs and Os is a paper-and-pencil game for two players who take turns marking the
+                            spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal,
+                            vertical, or diagonal row is the winner.</p>
+                            <button type="button" class="btn btn-outline-dark project-btn">View Project</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/projects/pig-dice.png" alt="pig-dice" class="img-fluid">
+                        <div class="card__content">
+                            <p class="card__title">Pig-Dice</p>
+                            <p class="card__description">Pig is a simple dice game which in its basic form is playable with just a single die. You win by being the first player
+                            to score 100 or more points.</p>
+                            <button type="button" class="btn btn-outline-dark project-btn">View Project</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/projects/ecommerce.png" alt="ezyShopping" class="img-fluid">
+                        <div class="card__content">
+                            <p class="card__title">ezyShopping</p>
+                            <p class="card__description">A basic ecommerce website build using HTML CSS JavaScript. Basic functionality like view product add product to cart
+                            product catalogs.</p>
+                            <button type="button" class="btn btn-outline-dark project-btn">View Project</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/projects/2048.png" alt="2048 game" class="img-fluid">
+                        <div class="card__content">
+                            <p class="card__title">2048 Game</p>
+                            <p class="card__description">2048 is an easy and fun puzzle game. Even if you don't love numbers you will love this game. It is played on a 4x4 grid
+                            using the arrows or W, A, S, D keys alternatively. Every time you press a key - all tiles slide. Tiles with the same
+                            value that bump into one-another are merged.</p>
+                            <button type="button" class="btn btn-outline-dark project-btn">View Project</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/projects/tic-tac-toe.png" alt="tic-tac-toe" class="img-fluid">
+                        <div class="card__content">
+                            <p class="card__title">Tic-Tac-Toe</p>
+                            <p class="card__description">Tic-tac-toe, noughts and crosses, or Xs and Os is a paper-and-pencil game for two players who take turns marking the
+                            spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal,
+                            vertical, or diagonal row is the winner.</p>
+                            <button type="button" class="btn btn-outline-dark project-btn">View Project</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/projects/tic-tac-toe.png" alt="tic-tac-toe" class="img-fluid">
+                        <div class="card__content">
+                            <p class="card__title">Tic-Tac-Toe</p>
+                            <p class="card__description">Tic-tac-toe, noughts and crosses, or Xs and Os is a paper-and-pencil game for two players who take turns marking the
+                            spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal,
+                            vertical, or diagonal row is the winner.</p>
+                            <button type="button" class="btn btn-outline-dark project-btn">View Project</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="./images/header-img_1_240x240.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="./images/header-img_1_240x240.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+
+        <footer class="container-fluid footer-cont text-center">
+            <span>Created By Akhilesh</span>
+        </footer>
+    </main>
 
     <script src="./JS/index.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
